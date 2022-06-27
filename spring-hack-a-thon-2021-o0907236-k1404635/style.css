@@ -1,0 +1,90 @@
+:root{
+    --w: 75px;
+    --h: 75px;
+    --main: #fdba4b;
+    --secondary: #4b3829;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h3, #instructions{
+    color: var(--main)
+}
+
+.btn{
+    background-color: var(--main);
+    border-color: var(--main);
+    color: var(--secondary);
+
+}
+
+.btn:hover{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--main);
+}
+
+#instructions{
+    background-color: var(--secondary);
+    border-radius: 7px;
+    padding: 2%;
+    text-align: center;
+
+}
+.word{
+    display: flex;
+    flex-direction: row;
+}
+.letterSpace {
+    float: left;
+    width: var(--w);
+    height: var(--h);
+    margin: 1px;
+    border: 2px solid var(--main);
+    border-radius: 7px;
+    background-color: var(--main);
+}
+
+.letter{
+    width: var(--w);
+    height: var(--h);
+}
+#letterBank 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* position: absolute;
+    bottom: 30px; */
+    height: var(--h);
+    width: 100px;
+    margin: 1px;
+    border: 2px solid var(--main);
+    border-radius: 7px;
+    background-color: var(--main)
+}
+#next {/*this on top of letter bank for some reason*/
+    display: block;
+}
+
+img{
+    display: inline;
+    justify-content: center;
+}
+
+div{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+body{
+    background: url(wallpaper/graham_cracker.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
